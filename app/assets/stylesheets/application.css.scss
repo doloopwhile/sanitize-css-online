@@ -1,0 +1,81 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+// overwrite defaults in sanitize.sass
+// Controls the page background color (default: #ffffff)
+$root-background-color: #eeeeee;
+
+// Controls the page box model inherited by all elements (default: border-box)
+$root-box-sizing: border-box;
+
+// Controls the page text color inherited by all elements (default: #ffffff)
+$root-color: #444444;
+
+// Controls the default page cursor (default: default)
+$root-cursor: default;
+
+// Controls the page font inherited by all elements (default: sans-serif)
+$root-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Controls the page text size inherited by all elements (default: 100%)
+$root-font-size: 12px;
+
+// Controls the page text line height inherited by all elements (default: 1.5)
+$root-line-height: 1.5;
+
+// Controls how background images are repeated on all elements (default: no-repeat)
+$background-repeat: no-repeat;
+
+// Controls the background color of form controls (button, input, select, textarea) (default: transparent)
+$form-element-background-color: transparent;
+
+// Controls the text color of form controls (button, input, select, textarea) (default: inherit)
+$form-element-color: inherit;
+
+// Controls the minimum height of form controls (button, [type="button"], [type="date"], [type="datetime"], [type="datetime-local"], [type="email"], [type="month"], [type="number"], [type="password"], [type="reset"], [type="search"], [type="submit"], [type="tel"], [type="text"], [type="time"], [type="url"], [type="week"], select, textarea) (default: 1.5em)
+$form-element-min-height: 1.5em;
+
+// Controls the vertical align of media elements (audio, canvas, iframe, img, svg, video) (default: middle)
+$media-element-vertical-align: middle;
+
+// Controls the font used by markup elements (code, kbd, pre, samp) (default: monospace)
+$monospace-font-family: monospace;
+
+// Controls the list style for navigation lists (nav ol, nav ul) (default: none)
+$nav-list-style: none;
+
+// Controls the background color of selected text (default: #b3d4fc)
+$selection-background-color: #b3d4fc;
+
+// Controls the text color of selected text (default: #ffffff)
+$selection-color: #ffffff;
+
+// Controls the text shadow of selected text (default: none)
+$selection-text-shadow: none;
+
+// Controls the text size of small elements (default: 75%)
+$small-font-size: 75%;
+
+// Controls how borders collapse within table elements (default: collapse)
+$table-border-collapse: collapse;
+
+// Controls the distance between borders within table elements (default: 0)
+$table-border-spacing: 0;
+
+// Controls the resizability of textarea elements (default: vertical)
+$textarea-resize: vertical;
+
+@import "sanitize.css/lib/sanitize.scss";
