@@ -3,6 +3,9 @@
 %table
   %thead
     %tr
+      %th Title
+      %th Body
+      %th Published
       %th
       %th
       %th
@@ -10,6 +13,9 @@
   %tbody
     - @samples.each do |sample|
       %tr
+        %td= sample.title
+        %td= sample.body
+        %td= sample.published
         %td= link_to 'Show', sample
         %td= link_to 'Edit', edit_sample_path(sample)
         %td= link_to 'Destroy', sample, :method => :delete, :data => { :confirm => 'Are you sure?' }

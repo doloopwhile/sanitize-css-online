@@ -1,5 +1,14 @@
 %p#notice= notice
 
+%p
+  %b Title:
+  = @sample.title
+%p
+  %b Body:
+  = @sample.body
+%p
+  %b Published:
+  = @sample.published
 
 = link_to 'Edit', edit_sample_path(@sample)
 \|

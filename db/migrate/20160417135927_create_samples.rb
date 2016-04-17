@@ -1,6 +1,9 @@
 class CreateSamples < ActiveRecord::Migration
   def change
     create_table :samples do |t|
+      t.string :title
+      t.text :body
+      t.boolean :published
 
       t.timestamps null: false
     end
