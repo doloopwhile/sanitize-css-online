@@ -1,1 +1,162 @@
-%h1 Preview#show
+%h1 Header
+%header
+  %ul
+    %li Coffee
+    %li Tea
+    %li Milk
+
+
+%h1 Navigation
+%h2 Unordered list
+%nav
+  %ul
+    %li Coffee
+    %li Tea
+    %li Milk
+
+%h2 Ordered list
+%nav
+  %ol
+    %li Spam
+    %li Ham
+    %li Egg
+
+%h1 Heading 1
+%h2 Heading 2
+%h3 Heading 3
+
+%h1 Text
+%p
+  Lorem ipsum dolor sit amet,
+  %a{href: 'http://10up.github.io/sanitize.css/'} consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+%p
+  %small
+    Lorem ipsum dolor sit amet,
+    %a{href: 'http://10up.github.io/sanitize.css/'} consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+%p
+  あのイーハトーヴォのすきとおった風、
+  %a{href: 'http://10up.github.io/sanitize.css/'} 夏でも底に冷たさをもつ青いそら、
+  うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
+%p
+  %small
+    あのイーハトーヴォのすきとおった風、
+    %a{href: 'http://10up.github.io/sanitize.css/'} 夏でも底に冷たさをもつ青いそら、
+    うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
+
+%h1 List
+
+%h2 Unordered list
+%ul
+  %li Coffee
+  %li Tea
+  %li Milk
+
+%h2 Ordered list
+%ol
+  %li Spam
+  %li Ham
+  %li Egg
+
+%h2 Definition list
+%dl
+  %dt Coffee
+  %dd black hot drink
+  %dt Milk
+  %dd white cold drink
+
+%h1 Form
+
+%form
+  %p
+    %label
+      名前：
+      %input{:name => "name", :size => "40", :type => "text"}/
+  %p
+    %label
+      血液型：
+      %select{:name => "blood"}
+        %option{:value => "A"} A型
+        %option{:value => "B"} B型
+        %option{:value => "O"} O型
+        %option{:value => "AB"} AB型
+  %fieldset
+    %legend 性別
+    %p
+      %label
+        %input{:name => "sex", :type => "radio", :value => "male"} 男
+    %p
+      %label
+        %input{:name => "sex", :type => "radio", :value => "female"} 女
+  %fieldset
+    %legend 趣味
+    %p
+      %label
+        %input{:name => "hobby", :type => "checkbox", :value => "sports"} スポーツ
+    %p
+      %label
+        %input{:name => "hobby", :type => "checkbox", :value => "reading"} 読書
+    %p
+      %label
+        %input{:name => "hobby", :type => "checkbox", :value => "music"} 音楽
+    %p
+      %label
+        %input{:name => "hobby", :type => "checkbox", :value => "travel"} 旅行
+  %p
+    %label
+      情報源
+      %select{multiple: 'multiple'}
+        %option 新聞
+        %option ラジオ
+        %option テレビ
+  %p
+    %label
+      コメント：
+      %br
+        %textarea{:cols => "40", :name => "comments", :rows => "2"}
+  %p
+    %input{:type => "submit", :value => "送信"}
+      %input{:type => "reset", :value => "リセット"}/
+
+%h1 Table
+%table
+  %thead
+    %tr
+      %th Firstname
+      %th Lastname
+      %th Points
+  %tbody
+    %tr
+      %td Jill
+      %td Smith
+      %td 50
+    %tr
+      %td Eve
+      %td Jackson
+      %td 94
+    %tr
+      %td John
+      %td Doe
+      %td 80
+
+%h1 Code
+code
+%code
+  Hello world!
+
+pre:
+%pre= @pre_source
+
+%h1 Blockquote
+%blockquote
+  Lorem ipsum dolor sit amet,
+  %a{href: 'http://10up.github.io/sanitize.css/'} consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+%blockquote
+  あのイーハトーヴォのすきとおった風、
+  %a{href: 'http://10up.github.io/sanitize.css/'} 夏でも底に冷たさをもつ青いそら、
+  うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
+
